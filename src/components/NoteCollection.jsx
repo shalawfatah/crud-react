@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import dotenv from 'dotenv';
 
-dotenv.config();
-
-const URL = process.env.REACT_APP_SERVER_URL;
+const URL = "https://note-node-crud.onrender.com/api/notes"
 
 const NoteCollection = () => {
     const [notes, setNotes] = useState([])
