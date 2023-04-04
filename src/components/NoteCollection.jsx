@@ -48,7 +48,7 @@ const NoteCollection = () => {
     <ul>
         {notes.map((item, index) => {
             return (
-                <div className={`${index % 2 == 0 ? 'bg-gray-100' : ''} flex items-center justify-between gap-x-4 px-2`}>
+                <div key={item.id} className={`${index % 2 === 0 ? 'bg-gray-100' : ''} flex items-center justify-between gap-x-4 px-2`}>
                     <div onClick={() => handleComplete(item)} className='flex items-center gap-x-4'>
                         <input type="checkbox" checked={item.completed} />
                         <li className={`${item.completed ? 'line-through text-gray-400' : ''} cursor-pointer`}>{item.text}</li>
