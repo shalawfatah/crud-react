@@ -4,7 +4,7 @@ const URL = "https://note-node-crud.onrender.com/api/notes"
 
 const NoteForm = () => {
     const [text, setText] = useState('')
-    const [completed, setCompleted] = useState(false)
+    const [completed] = useState(false)
 
     const handleSubmit = async (event) => {
         event.preventDefault();
