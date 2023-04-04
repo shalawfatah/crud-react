@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const URL = process.env.REACT_APP_SERVER_URL;
 
