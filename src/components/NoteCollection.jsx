@@ -44,11 +44,11 @@ const NoteCollection = () => {
     }, [notes])
   return (
     <>
-    <h1 className='mt-6 text-xl font-bold text-gray-700'>All Notes</h1>
+    <h1 className='mt-6 text-xl font-bold text-gray-600'>All Notes</h1>
     <ul>
         {notes.map((item, index) => {
             return (
-                <div key={item.id} className={`${index % 2 === 0 ? 'bg-gray-100' : ''} flex items-center justify-between gap-x-4 px-2`}>
+                <div key={item.id} className={`${index % 2 === 0 ? 'bg-gray-200' : ''} flex items-center justify-between gap-x-4 px-4 p-2 rounded-lg`}>
                     <div onClick={() => handleComplete(item)} className='flex items-center gap-x-4'>
                         <input type="checkbox" checked={item.completed} />
                         <li className={`${item.completed ? 'line-through text-gray-400' : ''} cursor-pointer`}>{item.text}</li>

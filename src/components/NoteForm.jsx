@@ -20,7 +20,7 @@ const NoteForm = () => {
   return (
     <form onSubmit={handleSubmit}>
         <div>
-            <label htmlFor="note" className="block mb-2 text-sm font-medium text-gray-900">Add Note</label>
+            <label htmlFor="note" className="block mb-2 text-sm font-medium text-gray-600">Add Note</label>
             <input
                 type="text" 
                 id="note"
@@ -30,7 +30,7 @@ const NoteForm = () => {
         </div>
         <p 
           onClick={handleSubmit}
-          className="bg-indigo-500 rounded text-white px-4 py-1 text-md font-bold my-2 cursor-pointer hover:bg-indigo-700 duration-400"
+          className="bg-indigo-500 rounded text-white px-4 py-2 text-md font-bold my-2 cursor-pointer hover:bg-indigo-700 duration-400"
           >Submit</p>
     </form>
   )
