@@ -5,7 +5,7 @@ const EditModal = ({item, text, setText, initialState, sendEdit}) => {
 
     useEffect(() => {
         setText(initialState)
-    }, [initialState])
+    }, [initialState, text, setText])
   return (
     <div className='w-screen h-screen bg-gray-400 bg-opacity-80 absolute top-0 left-0 flex justify-center items-center'>
         <input 
