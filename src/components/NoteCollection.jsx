@@ -73,6 +73,9 @@ const NoteCollection = () => {
       }
       setShowEdit(false)
     }
+    const handleClose = () => {
+      setShowEdit(false)
+    }
   return (
     <>
     <h1 className='mt-6 text-xl font-bold text-gray-600'>All Notes</h1>
@@ -93,7 +96,7 @@ const NoteCollection = () => {
                 </div>
             )
           })}
-          {showEdit ? <EditModal item={selectedItem} initialState={selectedItem.text} sendEdit={() => sendEdit(selectedItem)} text={text} setText={setText} /> : ''}
+          {showEdit ? <EditModal handleClose={handleClose} item={selectedItem} initialState={selectedItem.text} sendEdit={() => sendEdit(selectedItem)} text={text} setText={setText} /> : ''}
     </ul>
     </>
   )
