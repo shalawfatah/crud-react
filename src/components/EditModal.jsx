@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 const EditModal = ({item, text, setText, initialState, sendEdit}) => {
     
